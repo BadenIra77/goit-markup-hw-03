@@ -13,6 +13,9 @@ padding-left:0;
 img {
     display: block;
 }
+.footer-mail {
+    display: block;
+}
 body{
    font-family: 'Roboto', sans-serif;
    color: var(--main-text-color);
@@ -40,6 +43,13 @@ body{
     font-size: 26px;
     color: #000000;
 }
+.logo-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: #FFFFFF;
+}
 .logo-web { color:#2196F3;
 }
 
@@ -57,6 +67,9 @@ color: #2196F3;
  .header-list .header-link.current {
      color: #2196F3;
  }
+ .header-address :hover, .header-address :focus {
+    color: #2196F3;
+ }
 
 .header-mail, .header-tel
 {
@@ -71,7 +84,7 @@ margin-left: 93px;}
 .header-address {display: flex;
 margin-left: auto;}
 .header-nav { display: flex; align-items: center;}
-.header-list .header-item:not(:last-child) { margin-right:  50px;}
+.header-list .header-item:not(:last-child) { margin-right: 50px;}
 .header-address .header-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -81,14 +94,18 @@ margin-left: auto;}
 .section-sub-text {
     width: calc(100%-90px)/4;
 }
+.portfolio-list {display: flex;
+flex-wrap: wrap;
+gap: 30px;}
+.portfolio-block {
+   max-width: 370px }
+.portfolio-block {
+    width: calc(100%-20px)/3;
+}
 
 .caption-foto { display: flex;}
 .box-foto {margin-right: 30px;}
-/*.section-subtitle {
-text-align: center
-}*/
 
-/*.margin-right: 30px; */
 .section-team-foto { display: flex;}
 .section-after-hero .section-sub-text {
     margin-right: 30px;
@@ -113,7 +130,8 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--title-btn-color);
 margin-bottom: 30px;
-/*не розумію чому не центрується H1*/
+
+margin: 0 auto;
 text-align: center;
 max-width: 696px;
 }
@@ -158,7 +176,6 @@ max-width: 696px;
     color: var(--title-h2-3-color);
     margin-bottom: 11.58px;
 
-    text-align: center
 }
 .section-text{
     font-size: 14px;
@@ -172,12 +189,16 @@ max-width: 696px;
     background: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
-
+}
+.caption-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .caption-name {
-    margin-top: 30px;
+    
     margin-bottom: 10px;
 }
+
 .caption {
 font-weight: 700;
 font-size: 36px;
@@ -208,8 +229,14 @@ color: var(--title-h2-3-color);
     padding-bottom: 60px;
     background: #2F303A;
 }
+.portfolio-footer { 
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2F303A;
+}
 .adress-block{
     padding-top: 20px;
+    
 }
 /*  без стиля normal текст адреса становился italic */
 .footer-address {
@@ -221,7 +248,9 @@ color: var(--title-h2-3-color);
     color: var(--title-btn-color);
     background: #2F303A;
 
-    margin-bottom: 9px;
+
+     margin-bottom: 9px;
+     
 
 }
 .footer-mail, .footer-tel {
@@ -232,8 +261,13 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 background: #2F303A;
-margin-bottom: 9px;
+
 }
+.footer-mail{ margin-bottom: 9px;}
+.port-button {
+padding-top: 94px;
+padding-bottom: 94px; }
+
 .portfolio-subtitle {
 font-weight: 700;
 font-size: 18px;
@@ -241,6 +275,7 @@ line-height: 2;
 letter-spacing: 0.06em;
 color: var(--title-h2-3-color);
 }
+/*.portfolio-list {margin-bottom: 50px;}*/
 .portfolio-text {
     font-size: 16px;
     line-height: 1.88;
@@ -255,11 +290,28 @@ color: var(--title-h2-3-color);
     text-align: center;
     letter-spacing: 0.03em;
     background: #F5F4FA;
-    color: var(--title-h2-3-color);
+/* color: var(--title-h2-3-color); */
+    border-radius: 4px;
+    border-color: #F5F4FA ;
+
+    margin-bottom: 50px;
 }
+
+.first-button { display: flex;
+justify-content: center}
+.portfolio-button  { margin-right: 9px;} 
+.portfolio-button :last-child { margin-right: 0;}
+
+
 .portfolio-button :hover {
 color: var(--title-btn-color);
 background: #2196F3;
+}
+
+.port-subtitle {
+    max-width: 320px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .visually-hidden {
     position: absolute;
