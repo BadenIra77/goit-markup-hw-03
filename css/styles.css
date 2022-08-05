@@ -304,7 +304,8 @@ color: var(--title-h2-3-color);
 
 .first-button { display: flex;
 justify-content: center;
-margin-bottom: 50px;}
+margin-bottom: 50px;
+gap: 8px;}
 .portfolio-button  { 
     padding-top: 6px;
     padding-bottom: 6px; 
@@ -312,7 +313,6 @@ margin-bottom: 50px;}
     padding-right: 22px;} 
 .portfolio-button :last-child { margin-right: 0;}
 
-.rst-button { margin: 8px;}
 
 .portfolio-button :hover {
 color: var(--title-btn-color);
